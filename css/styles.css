@@ -60,7 +60,9 @@ video {
   width: 100%;
   height: 100%;
 }
-
+section{
+  padding: 2rem 7%;
+}
 /* =========== Custom Classes ============ */
 .d-flex {
   display: flex;
@@ -413,17 +415,25 @@ video {
 /* =========== Service ============ */
 .service .row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit,minmax(45rem,1fr));
   gap: 5rem;
+}
+
+.service .row img{
+  height: 45rem;
 }
 
 .service .col p {
   margin-bottom: 3rem;
+  line-height: 2rem;
 }
 
 .service .d-flex {
   justify-content: space-between;
-  margin-bottom: 3rem;
+  /* margin-bottom: 3rem; */
+  line-height: 2rem;
+
+
 }
 
 .section .col .rating span {
