@@ -60,7 +60,7 @@ video {
   width: 100%;
   height: 100%;
 }
-section{
+section {
   padding: 2rem 7%;
 }
 /* =========== Custom Classes ============ */
@@ -415,11 +415,11 @@ section{
 /* =========== Service ============ */
 .service .row {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(45rem,1fr));
+  grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
   gap: 5rem;
 }
 
-.service .row img{
+.service .row img {
   height: 45rem;
 }
 
@@ -432,8 +432,6 @@ section{
   justify-content: space-between;
   /* margin-bottom: 3rem; */
   line-height: 2rem;
-
-
 }
 
 .section .col .rating span {
@@ -804,10 +802,20 @@ section{
   grid-template-columns: repeat(2, minmax(10rem, 1fr));
   gap: 2rem;
 }
-
-.footer .row .col:last-child img {
+.footer .row .col .col-image{
+  height: 10rem;
+  overflow: hidden;
+  
+}
+.footer .row .col .col-image img{
   height: 10rem;
 }
+
+.footer .row .col .col-image img:hover{
+  transform: scale(1.15);
+  cursor: pointer;
+}
+
 
 .footer .row .col {
   display: flex;
@@ -824,6 +832,27 @@ section{
   color: var(--white);
   font-size: 1.5rem;
   margin-bottom: 0.5rem;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+.footer .row .col a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 80%;
+  height: 1px;
+  background: var(--white);
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+}
+.footer .row .col a:hover {
+  transform: translateX(6px);
+}
+.footer .row .col a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 @media (max-width: 767px) {
