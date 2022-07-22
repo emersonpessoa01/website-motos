@@ -739,6 +739,7 @@ section{
   font-size: 1.7rem;
   font-weight: 500;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 @media (max-width: 767px) {
