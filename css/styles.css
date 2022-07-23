@@ -472,6 +472,10 @@ section {
     width: 25rem;
     padding: 0.5rem;
   }
+  .btn1{
+    width: 4rem;
+    font-size: 1.5rem;
+  }
 }
 
 /* =========== About ============ */
