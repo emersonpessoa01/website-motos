@@ -9,5 +9,5 @@
 <!-- <div align="center"><img src="images/moto01.jpg" width=auto>
 </div> -->
 
-![screenshot](./images/moto03.jpg)
+![screenshot](./images/moto-readme.png)
 
