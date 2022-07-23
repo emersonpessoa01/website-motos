@@ -1023,12 +1023,14 @@ section {
 
 /* footer final */
 .footer-final {
-  background: var(--header);
+  background: var(--text-1);
   text-align: center;
 }
 
-.footer-final1 .share {
+.footer-final .share {
   padding: 1rem 0;
+  border-top: 1px solid #fff;
+
 }
 
 .footer-final .share a {
