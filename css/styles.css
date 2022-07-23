@@ -933,6 +933,7 @@ section {
   }
 }
 
+
 /* =========== Footer ============ */
 .footer {
   background-color: var(--text-1);
@@ -956,6 +957,7 @@ section {
 .footer .row .col .col-image img {
   height: 10rem;
   transition: 0.5s;
+  object-fit: cover;
 }
 
 .footer .row .col .col-image img:hover {
