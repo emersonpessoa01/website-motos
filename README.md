@@ -6,8 +6,9 @@
 
 [motos-website](https://motos-website.netlify.app/)
 
-<!-- <div align="center"><img src="images/moto01.jpg" width=auto>
-</div> -->
+<div align="center"><img src="images/moto-readme.png" width=auto>
+</div> 
 
-![screenshot](./images/moto-readme.png)
+
+<!-- ![screenshot](./images/moto-readme.png) -->
 
