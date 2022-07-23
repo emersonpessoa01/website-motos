@@ -32,6 +32,10 @@
   --black: #13131a;
   --bg: #010103;
   --background-facebook: #dadef0;
+
+  --blue-dark: #141c2c;
+  --blue-face: #1349c6;
+  --blue-twitter: #28a0d5;
 }
 
 *,
@@ -1116,8 +1120,8 @@ section {
 }
 
 .footer-final .share {
-  padding: 1rem 0;
-  border-top: var(--border);
+  /* padding: 1rem 0; */
+  border-bottom: 0.115rem solid rgba(255, 255, 255, 0.3);
 }
 
 .footer-final .share a {
@@ -1127,31 +1131,103 @@ section {
   font-size: 2rem;
   color: #fff;
   border: var(--border);
-  margin: 0.3rem;
+  margin: 0 0.3rem;
   border-radius: 50%;
+
 }
 
-.footer-final .share a:hover {
-  background-color: var(--blue);
-}
+/* .footer-final .share a:hover {
+  background-color: var(--white);
+} */
 
-.footer-final .links {
+/* .footer-final .links {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   padding: 2rem 0;
   gap: 1rem;
-}
+} */
 
-.footer-final .links a {
+/* .footer-final .links a {
+  text-decoration: none;
   padding: 0.7rem 2rem;
-  color: #fff;
+  color:var(--white);
   border: var(--border);
   font-size: 2rem;
+  width: 7rem;
+  transition: all 0.3s ease-in-out;
+} */
+
+/* .footer-final .links a:hover {
+  background: var(--blue);
+} */
+/* animation icons */
+.footer-final .share a:nth-child(1) {
+  color: var(--blue-face);
+  transform: translateY(-2px);
+  transform: translateY(2px);
+}
+.footer-final .share a:nth-child(2) {
+  color: var(--blue-twitter);
+  transform: translateY(-2px);
+}
+.footer-final .share a:nth-child(3) {
+  color: #9c47fc;
+  transform: translateY(-2px);
+  background: -webkit-linear-gradient(
+    45deg,
+    #f7ce02,
+    #f96302,
+    #f71102,
+    #d32155,
+    #b43890,
+    #904eca,
+    #8944bb,
+    #7832ae
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  
+}
+.footer-final .share a:hover:nth-child(3){
+  z-index:1;
+
+}
+.footer-final .share a:nth-child(4) {
+  color: var(--blue);
+  transform: translateY(-2px);
 }
 
-.footer-final .links a:hover {
-  background: var(--blue);
+
+/* animation social */
+.icon {
+  display: inline-block;
+  /* font-size: 44px; */
+  animation: float 5s ease-in-out infinite;
+}
+.fa-facebook {
+  animation-delay: 1s;
+}
+.fa-twitter {
+  animation-delay: 2s;
+}
+
+.fa-instagram {
+  animation-delay: 3s;
+}
+.fa-linkedin {
+  animation-delay: 4s;
+}
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .footer-final .credit {
