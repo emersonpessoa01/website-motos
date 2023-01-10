@@ -6,9 +6,10 @@
 
 [motos-website](https://website-motos.vercel.app/)
 
-<div align="center"><img src="images/moto-readme.png" width=auto>
+<div align="center"><img src="images/moto-readme.png" width=100%>
 </div> 
 
 
 <!-- ![screenshot](./images/moto-readme.png) -->
 
+# SCROLL-REVEAL
